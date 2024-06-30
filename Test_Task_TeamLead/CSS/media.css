@@ -1,0 +1,106 @@
+@media (max-width: 850px) { 
+  .reviews__carousel {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 764px) {
+  .promo__title {
+    font-size: 2em;
+  }
+
+  .promo__product {
+    max-width: 250px;
+  }
+
+  .promo__video {
+    top: 45%;
+    min-height: 610px;
+  }
+
+  .ingredients__content {
+        flex-direction: column;
+    }
+
+  .ingredients__product {
+      width: 150px;
+  }
+
+  .ingredient__text {
+      font-size: 1em;
+  }
+
+  .ingredients__button {
+      font-size: 1em;
+  }
+
+  .review__name {
+    font-size: 1.2em;
+  }
+
+  .review__text {
+      font-size: 1em;
+  }
+
+  .reviews__carousel {
+    max-width: 90%;
+  }
+
+  .description__text h2 {
+    font-size: 1.5em;
+  }
+
+  .description__text p {
+      font-size: 1em;
+  }
+
+  .description__features li {
+      font-size: 1em;
+  }
+
+  .description__button {
+      font-size: 1em;
+  }
+
+  .order-form__title {
+    font-size: 2.5em;
+}
+
+.order-form__timer {
+    font-size: 2.2em;
+}
+
+.order-form__price--old {
+    font-size: 2em;
+}
+
+.order-form__price--new {
+    font-size: 2.2em;
+}
+}
+
+@media (max-width: 535px) {
+  .promo__video {
+    top: 37%;
+    min-height: 500px;
+  }
+  
+  .promo__title {
+    font-size: 1.5em;
+  }
+  
+  .promo__product {
+    max-width: 155px;
+  }
+
+  .promo__feature {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 484px) { 
+  .review {
+    padding: 10px;
+    min-width: 200px;
+  }
+}

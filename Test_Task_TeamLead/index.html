@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;800;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+<body>
+  <div class="promo">
+    <video class="promo__video" autoplay muted loop>
+      <source src="img/video_2024-07-01_00-14-14.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <div class="promo__content">
+        <h1 class="promo__title">LevelUp</h1>
+        <img src="img/prod.png" alt="LevelUp Product" class="promo__product">
+        <ul class="promo__features list-reset">
+            <li class="promo__feature">Витамины группы В</li>
+            <li class="promo__feature">Цинк</li>
+            <li class="promo__feature">Селен</li>
+        </ul>
+        <button class="promo__button" onclick="scrollToOrder()">Заказать</button>
+    </div>
+  </div>
+  <div class="ingredients">
+    <div class="ingredients__content">
+        <div class="ingredients__list">
+            <div class="ingredient">
+                <div class="ingredient__icon"><img src="img/1f8025ff-cbc321c32b961b804f90462a7cefbc07.jpg" alt="Ингредиент 1"></div>
+                <div class="ingredient__text">МКЦ</div>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient__icon"><img src="img/1f8025ff-cbc321c32b961b804f90462a7cefbc07.jpg" alt="Ингредиент 2"></div>
+                <div class="ingredient__text">Кальция гидрофосфат</div>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient__icon"><img src="img/1f8025ff-cbc321c32b961b804f90462a7cefbc07.jpg" alt="Ингредиент 3"></div>
+                <div class="ingredient__text">Силденафил стеаратава</div>
+            </div>
+        </div>
+        <img src="img/prod.png" alt="LevelUp Product" class="ingredients__product">
+        <div class="ingredients__list">
+            <div class="ingredient">
+                <div class="ingredient__icon"><img src="img/1f8025ff-cbc321c32b961b804f90462a7cefbc07.jpg" alt="Ингредиент 4"></div>
+                <div class="ingredient__text">Магния стеарат</div>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient__icon"><img src="img/1f8025ff-cbc321c32b961b804f90462a7cefbc07.jpg" alt="Ингредиент 5"></div>
+                <div class="ingredient__text">Силденафила цитрат</div>
+            </div>
+            <div class="ingredient">
+                <div class="ingredient__icon"><img src="img/1f8025ff-cbc321c32b961b804f90462a7cefbc07.jpg" alt="Ингредиент 6"></div>
+                <div class="ingredient__text">Кроскармеллоза натрия</div>
+            </div>
+        </div>
+    </div>
+    <button class="ingredients__button btn-reset" onclick="scrollToOrder()">Заказать</button>
+  </div>
+  <div class="reviews">
+    <div class="reviews__carousel">
+        <div class="review">
+            <img src="img/image_1.jpg" alt="Reviewer 1" class="review__photo">
+            <h3 class="review__name">Иван Иванов</h3>
+            <p class="review__text">Отличный продукт! Очень доволен результатом.</p>
+        </div>
+        <div class="review">
+            <img src="img/image_2.jpg" alt="Reviewer 2" class="review__photo">
+            <h3 class="review__name">Мария Смирнова</h3>
+            <p class="review__text">Рекомендую всем. Очень эффективное средство.</p>
+        </div>
+        <div class="review">
+            <img src="img/image_3.jpg" alt="Reviewer 3" class="review__photo">
+            <h3 class="review__name">Алексей Петров</h3>
+            <p class="review__text">Отличное качество и быстрый результат.</p>
+        </div>
+    </div>
+  </div>
+  <div class="description">
+    <div class="description__content">
+        <div class="description__image">
+            <img src="img/doctor.png" alt="Person with LevelUp">
+        </div>
+        <div class="description__text">
+            <h2>Немного про LevelUp</h2>
+            <p>LevelUp — это продукт для повышения потенции. Содержит витамины и минералы, которые помогают улучшить ваше здоровье и увеличить уровень энергии.</p>
+            <ul class="description__features">
+                <li>Улучшает кровообращение</li>
+                <li>Повышает уровень энергии</li>
+                <li>Укрепляет иммунитет</li>
+            </ul>
+            <button class="description__button" onclick="scrollToOrder()">Заказать</button>
+        </div>
+    </div>
+  </div>
+  <div class="order-form" id="order-form">
+    <div class="order-form__content">
+        <h2 class="order-form__title">LevelUp</h2>
+        <div class="order-form__timer" id="timer">30:00</div>
+        <img src="img/prod.png" alt="LevelUp Product" class="order-form__product">
+        <div class="order-form__prices">
+            <span class="order-form__price--old">1999 руб.</span>
+            <span class="order-form__price--new">999 руб.</span>
+        </div>
+        <form class="order-form__form" onsubmit="return false;">
+            <div class="order-form__input-container">
+                <input type="text" name="name" id="name" placeholder="Имя" class="order-form__input">
+                <div class="order-form__hint" id="name-hint">Пример: Иван Иванов</div>
+            </div>
+            <div class="order-form__input-container">
+                <input type="text" name="phone" id="phone" placeholder="Телефон" class="order-form__input" onkeypress="return isNumberKey(event)">
+                <div class="order-form__hint" id="phone-hint">Пример: 89181508622</div>
+            </div>
+            <button type="submit" class="order-form__button">Заказать</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
